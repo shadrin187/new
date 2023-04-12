@@ -1,0 +1,93 @@
+.title {
+  font-family: "TTLakes-bold";
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: $font;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/highlight.svg");
+    width: 4px;
+    height: 40px;
+    left: -16px;
+
+    @media (min-width: 768px) {
+      left: -24px;
+    }
+
+    @media (min-width: 1366px) {
+      left: -30px;
+    }
+  }
+
+  &__button {
+    display: none;
+    white-space: nowrap;
+    @extend %for_buttons;
+
+    @media (min-width: 1366px) {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-left: auto;
+      position: relative;
+      margin-left: 160px;
+
+      &:hover {
+        filter: saturate(500%);
+        transition: 0.3s ease-in;
+      }
+  
+      &:focus {
+        filter: saturate(500%);
+        transition: 0.3s ease-in;
+      }
+  
+      &:active {
+        transform: scale(0.9);
+        transition: 0.1s ease-in;
+      }
+    }
+
+    &_repair::before {
+        content: "Оставить заявку";
+        position: absolute;
+        display: block;
+        font-family: "TTLakes-Medium";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $font;
+        left: -130px;
+      }
+
+    &_checkstatus::before {
+        content: "Статус ремонта";
+        position: absolute;
+        display: block;
+        font-family: "TTLakes-Medium";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $font;
+        left: -130px;
+      }
+    
+  }
+
+  &__buttons {
+    @media (min-width: 1366px) {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      position: relative;
+    }
+  }
+}

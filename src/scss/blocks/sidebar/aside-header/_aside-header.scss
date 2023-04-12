@@ -1,0 +1,60 @@
+.aside-header {
+  &__burger {
+    @extend %for_buttons;
+
+    &:hover {
+      filter: saturate(500%);
+      transition: 0.3s ease-in;
+    }
+
+    &:focus {
+      filter: saturate(500%);
+      transition: 0.3s ease-in;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    margin-left: 16.73px;
+    margin-right: auto;
+
+    &:hover {
+      filter: saturate(500%);
+      transition: 0.3s ease-in;
+    }
+
+    &:focus {
+      filter: saturate(500%);
+      transition: 0.3s ease-in;
+    }
+
+    @media (min-width: 1366px) {
+      margin-left: 0;
+    }
+  }
+
+  &__search {
+    @extend %for_buttons;
+
+    &:hover {
+      filter: saturate(500%);
+      transition: 0.3s ease-in;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+
+    &:focus {
+      filter: saturate(500%);
+      transition: 0.3s ease-in;
+    }
+  }
+}

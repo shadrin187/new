@@ -1,0 +1,56 @@
+.main {
+  background-color: $bg_gray;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+
+  &__caption {
+    display: flex;
+    margin: 0;
+    padding: 0 16px;
+    height: 88px;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      padding: 0;
+      margin: 0 24px;
+    }
+
+    @media (min-width: 1366px) {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      padding: 0 32px;
+      padding-top: 40px;
+    }
+  }
+
+  &__navigation {
+    overflow: auto;
+    padding: 0;
+    margin: 0 16px;
+
+    @media (min-width: 768px) {
+      margin: 0 24px;
+    }
+
+    @media (min-width: 1366px) {
+      margin: 0 32px;
+    }
+  }
+
+  &__image {
+    @media (min-width: 768px) {
+      flex: 1 0 46%;
+      margin: 0;
+      padding: 0;
+      margin-right: 25px;
+    }
+
+    @media (min-width: 1366px) {
+      margin-right: 28px;
+    }
+  }
+}
+

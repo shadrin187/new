@@ -1,0 +1,36 @@
+.description {
+  &__text {
+    font-family: "TTLakes-Regular";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $font;
+    margin: 0 16px 16px 16px;
+
+    @media (min-width: 768px) {
+      line-height: 20px;
+      margin-left: 24px;
+    }
+
+    @media (min-width: 1366px) {
+      margin: 0 32px 14px 32px;
+      padding: 0;
+    }
+
+    &_laptop {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+
+    &_desktop {
+      display: none;
+
+      @media (min-width: 1366px) {
+        display: inline;
+      }
+    }
+  }
+}

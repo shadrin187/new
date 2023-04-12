@@ -1,0 +1,200 @@
+.technics {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $bg_gray;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(to right, $bg_gray 0%, $bg_white 98.61%);
+    margin-bottom: 16px;
+    border-top: 1px solid $shadow;
+
+    @media (min-width: 768px) {
+      height: 56px;
+    }
+  }
+
+  &__title {
+    font-family: "TTLakes-Regular";
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $font_gray;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding: 16px;
+
+    @media (min-width: 768px) {
+      padding: 0 24px;
+    }
+
+    @media (min-width: 1366px) {
+      padding: 0 32px;
+    }
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 210px;
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+
+    @media (min-width: 768px) {
+      height: auto;
+    }
+  }
+
+  &__wrapper {
+    box-sizing: content-box;
+    padding-left: 16px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+      padding: 0 24px;
+      width: 100%;
+    }
+
+    @media (min-width: 1366px) {
+      padding: 0 32px;
+      width: 100%;
+    }
+  }
+
+  &__slide {
+    width: 240px;
+    height: 160px;
+
+    @media (min-width: 768px) {
+      width: 224px;
+      flex: 0 0 29%;
+      margin-right: 24px;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: 1366px) {
+      flex: 0 0 20%;
+      margin-right: 32px;
+    }
+
+    &_hidden {
+      @media (min-width: 768px) {
+        display: none;
+
+        @media (min-width: 1366px) {
+          display: block;
+        }
+      }
+    }
+
+    &_hidden_desktop {
+      @media (min-width: 1366px) {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    @extend %for_menu_links;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: $bg_white;
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid $link_border;
+      filter: saturate(500%);
+      transition: 0.3s ease-in;
+    }
+
+    &:focus {
+      filter: saturate(500%);
+      transition: 0.3s ease-in;
+    }
+
+    &:active {
+      transition: 0.1s ease-in;
+      border: 1px solid $font_active;
+    }
+
+    @media (min-width: 768px) {
+      width: 224px;
+      margin: auto;
+    }
+
+    @media (min-width: 1366px) {
+      width: auto;
+    }
+  }
+
+  &__type {
+    margin: 16px 0 auto 16px;
+  }
+
+  &__image {
+    width: 40px;
+    height: 40px;
+    margin: auto 16px 16px auto;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 24px;
+    align-self: flex-start;
+    cursor: pointer;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    display: none;
+    align-items: center;
+    font-family: "TTLakes-Medium";
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    margin-left: 16px;
+    align-self: flex-start;
+    cursor: pointer;
+    border: none;
+    background: $bg_gray;
+
+    &:hover {
+      color: $font_gray;
+    }
+
+    &:focus {
+      color: $font_gray;
+    }
+
+    &:active {
+      color: $font_active;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    &_image {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+
+      &.technics__button_image_rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
