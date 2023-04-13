@@ -42,8 +42,9 @@
 
     &:focus {
       background-color: $bg_white;
-      border: 2px solid $link_border;
-      border-radius: 6px;
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
     }
 
     &:active {

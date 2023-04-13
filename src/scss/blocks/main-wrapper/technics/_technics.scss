@@ -58,12 +58,7 @@
       display: flex;
       flex-wrap: wrap;
       height: auto;
-      padding: 0 24px;
-      width: 100%;
-    }
-
-    @media (min-width: 1366px) {
-      padding: 0 32px;
+      padding: 0;
       width: 100%;
     }
   }
@@ -71,17 +66,20 @@
   &__slide {
     width: 240px;
     height: 160px;
+    background-color: $bg_gray;
 
     @media (min-width: 768px) {
       width: 224px;
-      flex: 0 0 29%;
-      margin-right: 24px;
+      flex: 0 0 33%;
+      //margin-right: 24px;
       margin-bottom: 16px;
+      margin-top: 2px;
     }
 
     @media (min-width: 1366px) {
-      flex: 0 0 20%;
-      margin-right: 32px;
+      width: 240px;
+      flex: 0 0 25%;
+      //margin-right: 32px;
     }
 
     &_hidden {
@@ -105,10 +103,18 @@
     @extend %for_menu_links;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 240px;
     height: 100%;
     background-color: $bg_white;
     border: 1px solid transparent;
+
+    @media (min-width: 768px) {
+      width: 224px !important;
+    }
+
+    @media (min-width: 1366px) {
+      width: 240px !important;
+    }
 
     &:hover {
       border: 1px solid $link_border;
@@ -119,6 +125,8 @@
     &:focus {
       filter: saturate(500%);
       transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 2px $link_border;
     }
 
     &:active {
@@ -175,6 +183,9 @@
 
     &:focus {
       color: $font_gray;
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 2px $link_border;
     }
 
     &:active {

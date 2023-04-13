@@ -69,6 +69,8 @@
     &:focus {
       filter: saturate(500%);
       transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
     }
 
     &:active {
@@ -118,6 +120,9 @@
     &:focus {
       background-color: $form_bg;
       color: $font;
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
     }
   }
 
@@ -127,6 +132,9 @@
     &:focus {
       background-color: $form_bg;
       color: $font;
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
     }
   }
 
@@ -136,6 +144,9 @@
     &:focus {
       background-color: $form_bg;
       color: $font;
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
     }
   }
 
@@ -147,6 +158,9 @@
     &:focus {
       background-color: $form_bg;
       color: $font;
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
     }
   }
 
@@ -173,6 +187,18 @@
     width: 136px;
     height: 32px;
     border-radius: 16px;
+    background-color: $btn_color;
+    color: $bg_white;
+    text-transform: uppercase;
+    font-family: "TTLakes-Bold";
+    font-size: 12px;
+    line-height: 24px;
+    text-align: left;
+    text-indent: 12px;
+    letter-spacing: -0.15px;
+    position: relative;
+    display: flex;
+    align-items: center;
 
     &:hover {
       filter: saturate(500%);
@@ -182,10 +208,17 @@
     &:focus {
       filter: saturate(500%);
       transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
     }
 
     &:active {
       transform: scale(0.9);
     }
+  }
+
+  &__button-image {
+    position: absolute;
+    transform: translateX(105px);
   }
 }

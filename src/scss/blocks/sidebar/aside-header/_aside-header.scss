@@ -10,6 +10,8 @@
     &:focus {
       filter: saturate(500%);
       transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
     }
 
     &:active {
@@ -33,6 +35,8 @@
     &:focus {
       filter: saturate(500%);
       transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 1px $link_border;
     }
 
     @media (min-width: 1366px) {
@@ -55,6 +59,8 @@
     &:focus {
       filter: saturate(500%);
       transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
     }
   }
 }

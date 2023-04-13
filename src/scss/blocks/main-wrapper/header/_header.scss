@@ -16,7 +16,6 @@
   }
 
   &__link {
-
     &:hover {
       filter: saturate(500%);
       transition: 0.3s ease-in;
@@ -46,6 +45,8 @@
     &:focus {
       filter: saturate(500%);
       transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
     }
 
     &:active {
@@ -57,7 +58,7 @@
       margin-right: 40px;
       &::after {
         content: "";
-        background-image: url('../img/divider.svg');
+        background-image: url("../img/divider.svg");
         display: block;
         position: absolute;
         height: 32px;
@@ -88,6 +89,8 @@
     &:focus {
       filter: saturate(500%);
       transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
     }
 
     &:active {
@@ -112,7 +115,7 @@
 
       &::before {
         content: "";
-        background-image: url('../img/divider.svg');
+        background-image: url("../img/divider.svg");
         display: block;
         position: absolute;
         height: 32px;
@@ -125,5 +128,21 @@
 
   &__button {
     @extend %for_buttons;
+
+    &:hover {
+      filter: saturate(500%);
+      transition: 0.3s ease-in;
+    }
+
+    &:focus {
+      filter: saturate(500%);
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px $link_border;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
   }
 }
