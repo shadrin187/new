@@ -50,8 +50,7 @@ body {
   padding: 0;
   width: 40px;
   height: 40px;
-  cursor: pointer;
-  border: 1px solid transparent; }
+  cursor: pointer; }
 
 .aside-menu__link, .aside-footer__mail, .aside-footer__phone, .technics__link {
   font-family: 'TTLakes-Medium';
@@ -152,7 +151,9 @@ body {
 .aside-header__burger:focus {
   -webkit-filter: saturate(500%);
           filter: saturate(500%);
-  transition: 0.3s ease-in; }
+  transition: 0.3s ease-in;
+  outline: none;
+  box-shadow: 0 0 0 3px #B8FFEC; }
 
 .aside-header__burger:active {
   transform: scale(0.9); }
@@ -171,7 +172,9 @@ body {
   .aside-header__logo:focus {
     -webkit-filter: saturate(500%);
             filter: saturate(500%);
-    transition: 0.3s ease-in; }
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 1px #B8FFEC; }
   @media (min-width: 1366px) {
     .aside-header__logo {
       margin-left: 0; } }
@@ -187,7 +190,9 @@ body {
 .aside-header__search:focus {
   -webkit-filter: saturate(500%);
           filter: saturate(500%);
-  transition: 0.3s ease-in; }
+  transition: 0.3s ease-in;
+  outline: none;
+  box-shadow: 0 0 0 3px #B8FFEC; }
 
 .aside-menu__items {
   display: flex;
@@ -226,7 +231,9 @@ body {
     opacity: 1;
     transition: opacity 0.5s ease-in; }
   .aside-menu__link:focus {
-    color: #7E7E82; }
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 1px #B8FFEC; }
   .aside-menu__link:focus::before {
     opacity: 1;
     transition: opacity 0.5s ease-in; }
@@ -254,7 +261,9 @@ body {
 .aside-footer__button:focus {
   -webkit-filter: saturate(500%);
           filter: saturate(500%);
-  transition: 0.3s ease-in; }
+  transition: 0.3s ease-in;
+  outline: none;
+  box-shadow: 0 0 0 3px #B8FFEC; }
 
 .aside-footer__button:active {
   transform: scale(0.9); }
@@ -265,12 +274,20 @@ body {
   height: 24px;
   line-height: 24px;
   letter-spacing: -0.2px; }
+  .aside-footer__mail:focus {
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 1px #B8FFEC; }
 
 .aside-footer__phone {
   font-family: "TTLakes-Bold";
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.6px; }
+  .aside-footer__phone:focus {
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 1px #B8FFEC; }
 
 .aside-footer__languages {
   display: flex;
@@ -278,6 +295,10 @@ body {
   padding: 0;
   margin-top: 40px;
   margin-bottom: 32px; }
+  .aside-footer__languages:focus {
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 1px #B8FFEC; }
 
 .aside-footer__radio {
   cursor: pointer;
@@ -389,12 +410,18 @@ body {
         width: 2px;
         top: 4px;
         left: -20px; }
-  .header:focus {
+  .header__button:hover {
+    -webkit-filter: saturate(500%);
+            filter: saturate(500%);
+    transition: 0.3s ease-in; }
+  .header__button:focus {
     -webkit-filter: saturate(500%);
             filter: saturate(500%);
     transition: 0.3s ease-in;
     outline: none;
     box-shadow: 0 0 0 3px #B8FFEC; }
+  .header__button:active {
+    transform: scale(0.9); }
 
 .main {
   background-color: #F8F8F8;
@@ -514,6 +541,7 @@ body {
 
 .navigation__items {
   margin: 0;
+  margin-top: 2px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -550,7 +578,10 @@ body {
   .navigation__link:focus {
     background-color: #FFFFFF;
     border: 2px solid #B8FFEC;
-    border-radius: 6px; }
+    border-radius: 6px;
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 2px #B8FFEC; }
   .navigation__link:active {
     border: 2px solid red;
     color: red;
@@ -590,7 +621,10 @@ body {
     .about__more_button:hover {
       color: #7E7E82; }
     .about__more_button:focus {
-      color: #7E7E82; }
+      color: #7E7E82;
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 2px #B8FFEC; }
     .about__more_button:active {
       color: red; }
 
@@ -679,6 +713,7 @@ body {
         width: 224px !important;
         flex: 0 0 33%;
         margin-bottom: 16px;
+        margin-top: 2px;
         text-align: center; } }
     @media (min-width: 1366px) {
       .brands__slide {
@@ -714,8 +749,8 @@ body {
       -webkit-filter: saturate(200%);
               filter: saturate(200%);
       transition: 0.3s ease-in;
-      border: 2px solid #B8FFEC;
-      border-radius: 6px; }
+      outline: none;
+      box-shadow: inset 0 0 0 3px #B8FFEC; }
     .brands__image:active {
       transform: scale(0.95);
       border: 1px solid red; }
@@ -746,7 +781,10 @@ body {
     .brands__button:hover {
       color: #7E7E82; }
     .brands__button:focus {
-      color: #7E7E82; }
+      color: #7E7E82;
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 2px #B8FFEC; }
     .brands__button:active {
       color: red; }
     @media (min-width: 768px) {
@@ -827,7 +865,8 @@ body {
       .technics__slide {
         width: 224px;
         flex: 0 0 33%;
-        margin-bottom: 16px; } }
+        margin-bottom: 16px;
+        margin-top: 2px; } }
     @media (min-width: 1366px) {
       .technics__slide {
         width: 240px;
@@ -862,7 +901,9 @@ body {
     .technics__link:focus {
       -webkit-filter: saturate(500%);
               filter: saturate(500%);
-      transition: 0.3s ease-in; }
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 2px #B8FFEC; }
     .technics__link:active {
       transition: 0.1s ease-in;
       border: 1px solid red; }
@@ -902,7 +943,10 @@ body {
     .technics__button:hover {
       color: #7E7E82; }
     .technics__button:focus {
-      color: #7E7E82; }
+      color: #7E7E82;
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 2px #B8FFEC; }
     .technics__button:active {
       color: red; }
     @media (min-width: 768px) {
@@ -1057,7 +1101,9 @@ body {
     .prices__button:focus {
       -webkit-filter: saturate(500%);
               filter: saturate(500%);
-      transition: 0.3s ease-in; }
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px #B8FFEC; }
     .prices__button:active {
       transition: 0.1s ease-in;
       transform: scale(0.9); }
@@ -1126,8 +1172,9 @@ body {
       border-radius: 6px; }
     .footer__link:focus {
       background-color: #FFFFFF;
-      border: 2px solid #B8FFEC;
-      border-radius: 6px; }
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px #B8FFEC; }
     .footer__link:active {
       border: 2px solid red;
       color: red;
@@ -1217,7 +1264,9 @@ body {
   .feedback__burger:focus {
     -webkit-filter: saturate(500%);
             filter: saturate(500%);
-    transition: 0.3s ease-in; }
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 3px #B8FFEC; }
   .feedback__burger:active {
     transform: scale(0.9); }
   @media (min-width: 1366px) {
@@ -1249,19 +1298,31 @@ body {
     width: 100%; }
   .feedback__name:focus {
     background-color: #dcfaf9;
-    color: #1b1c21; }
+    color: #1b1c21;
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 3px #B8FFEC; }
   .feedback__tel:focus {
     background-color: #dcfaf9;
-    color: #1b1c21; }
+    color: #1b1c21;
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 3px #B8FFEC; }
   .feedback__mail:focus {
     background-color: #dcfaf9;
-    color: #1b1c21; }
+    color: #1b1c21;
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 3px #B8FFEC; }
   .feedback__textarea {
     resize: none;
     height: 118px; }
     .feedback__textarea:focus {
       background-color: #dcfaf9;
-      color: #1b1c21; }
+      color: #1b1c21;
+      transition: 0.3s ease-in;
+      outline: none;
+      box-shadow: 0 0 0 3px #B8FFEC; }
   .feedback__message {
     font-size: 14px;
     line-height: 16px;
@@ -1364,7 +1425,9 @@ body {
   .call__burger:focus {
     -webkit-filter: saturate(500%);
             filter: saturate(500%);
-    transition: 0.3s ease-in; }
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 3px #B8FFEC; }
   .call__burger:active {
     transform: scale(0.9); }
   @media (min-width: 1366px) {
@@ -1396,7 +1459,10 @@ body {
     width: 100%; }
   .call__tel:focus {
     background-color: #dcfaf9;
-    color: #1b1c21; }
+    color: #1b1c21;
+    transition: 0.3s ease-in;
+    outline: none;
+    box-shadow: 0 0 0 3px #B8FFEC; }
   .call__message {
     font-size: 14px;
     line-height: 16px;
